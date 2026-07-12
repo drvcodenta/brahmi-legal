@@ -325,6 +325,59 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
   box-shadow: 0 10px 26px rgba(84, 16, 18, 0.16);
 }
 
+/* ── Legal pages (privacy.html / terms.html) ───────────── */
+
+.legal-main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 22px 84px;
+}
+
+.legal-article h1 { font-size: clamp(30px, 5vw, 42px); margin-bottom: 10px; }
+
+.legal-updated {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+
+.legal-intro {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.legal-article h2 { font-size: 21px; margin: 34px 0 10px; }
+.legal-article p { color: var(--muted); font-size: 15.5px; margin-bottom: 12px; }
+
+.legal-article ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 15.5px;
+}
+.legal-article li { margin-bottom: 8px; }
+.legal-article li::marker { color: var(--accent); }
+
+.legal-article blockquote {
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 16px 20px;
+  margin: 18px 0;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.legal-disclaimer {
+  margin-top: 40px;
+  border-top: 1px solid var(--outline);
+  padding-top: 20px;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
 /* ── Footer ────────────────────────────────────────────── */
 
 .footer {
