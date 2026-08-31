@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brahmi | Assistant to Reclaim your energy & Rebuild your life.</title>
-  <meta name="description" content="Brahmi is a calm, structured self-improvement app for quitting compulsive habits — streak tracking, daily check-ins, knowledge, and reflection, inspired by India's gurukul tradition." />
+  <title>Brahmi | Assistant to Reclaim your energy &amp; Rebuild your life.</title>
+  <meta name="description" content="Brahmi is a calm, structured self-improvement app for quitting compulsive habits — streaks, daily check-ins, day-by-day unlocks, milestone badges, guided pranayama, and a knowledge library rooted in India's gurukul tradition." />
+  <meta name="theme-color" content="#FFF8F7" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141010" media="(prefers-color-scheme: dark)" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <!-- Apply the saved theme before first paint, so a dark-mode visitor never
+       gets a white flash. The toggle itself is injected by script.js. -->
+  <script>try{var t=localStorage.getItem('brahmi-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
 
@@ -25,10 +30,11 @@
       </button>
       <div class="nav-menu" id="nav-menu">
         <a href="#features">Features</a>
+        <a href="#journey">The journey</a>
+        <a href="#practices">Practices</a>
         <a href="#how-it-works">How it works</a>
         <a href="#faq">FAQ</a>
         <a href="./privacy.html">Privacy</a>
-        <a href="./terms.html">Terms</a>
         <a href="mailto:codentas@gmail.com">Contact</a>
         <a href="#get" class="btn btn-primary nav-cta">Get the app</a>
       </div>
@@ -41,7 +47,7 @@
     <section class="hero" id="get">
       <img src="assets/logo.png" alt="Brahmi" class="hero-icon" />
       <p class="eyebrow">Calm. Structured. Judgement-free.</p>
-      <h1>Reclaim your energy.<br /></h1>
+      <h1>Reclaim your energy.</h1>
       <p class="hero-sub">
         Brahmi helps you quit compulsive habits by redirecting your energy into the
         life you actually want — a daily practice inspired by India&rsquo;s gurukul
@@ -62,6 +68,14 @@
       <p class="hero-note">Coming soon &middot; For all ages</p>
     </section>
 
+    <!-- ── What's in the box, in numbers ────────────────── -->
+    <section class="stat-strip" aria-label="Brahmi in numbers">
+      <div class="stat"><b>90+</b><span>Articles</span></div>
+      <div class="stat"><b>19</b><span>Check-in questions</span></div>
+      <div class="stat"><b>11</b><span>Milestone badges</span></div>
+      <div class="stat"><b>9</b><span>Guided practices</span></div>
+    </section>
+
     <!-- ── Philosophy quote ─────────────────────────────── -->
     <section class="quote-band">
       <blockquote>
@@ -79,18 +93,51 @@
         <div class="card">
           <div class="card-icon">🔥</div>
           <h3>Streaks</h3>
-          <!-- <p>Date-anchored streak tracking with a check-in heatmap, so you can see your consistency take shape over weeks and months.</p> -->
           <p>To help you track your clean days, along with heatmap to help see progress visually.</p>
         </div>
         <div class="card">
           <div class="card-icon">🌅</div>
           <h3>Daily check-ins</h3>
           <p>A simple daily ritual to mark the day, stay honest with yourself, and keep the rhythm going.</p>
+          <p>One question carries the streak, and it is written to look like it. The rest are the small disciplines around it — sleep, training, food, the phone at midnight.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🔒</div>
+          <h3>It opens as you go</h3>
+          <p>You are not handed everything on day one. Articles, check-in questions and practices arrive as your days add up, so the app stays a path and not a wall.</p>
+          <p>And a slip never takes back what you already earned.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🏅</div>
+          <h3>Milestone badges</h3>
+          <p>Eleven rungs, from day 1 to a full year — each with its Sanskrit name and an honest note on what those days actually buy your body, mind, and spirit.</p>
+          <p>No invented numbers. Tradition is named as tradition.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🌬️</div>
+          <h3>Guided practices</h3>
+          <p>Seven pranayama with a breath pacer you follow on screen, Om japa with a mala counter, and trataka. Something to actually do with the energy, not just a timer.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🔊</div>
+          <h3>Ambient sound</h3>
+          <p>An Om drone, a tanpura, or flowing water to sit under while you practise. All of it made for this app, so nothing here is borrowed.</p>
         </div>
         <div class="card">
           <div class="card-icon">📖</div>
           <h3>Knowledge library</h3>
           <p>Short, readable articles on the &ldquo;why&rdquo; behind the practice, so discipline comes from practise of knowledge, not fear.</p>
+          <p>Four branches — Focus, Body Training, Vedic Lore, Timeless Legends — plus bookmarks, and a tick on whatever you have already read.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🧭</div>
+          <h3>Know where you are</h3>
+          <p>A timeline of the whole journey in five phases, so a hard week reads as a phase you are passing through, not proof that it is not working.</p>
         </div>
         <div class="card">
           <div class="card-icon">🎯</div>
@@ -100,7 +147,15 @@
         <div class="card">
           <div class="card-icon">🪞</div>
           <h3>Reflection, not shame</h3>
-          <p>Slipped?</p> <p>Slips are part of the path, not the end of it — progress matters more than perfection.</p> <p>Reflect, reset, and keep going.</p>
+          <p>Slipped?</p>
+          <p>Slips are part of the path, not the end of it — progress matters more than perfection.</p>
+          <p>Reflect, reset, and keep going.</p>
+        </div>
+        <div class="card">
+          <span class="tag">New</span>
+          <div class="card-icon">🌗</div>
+          <h3>Light and dark</h3>
+          <p>Ink on parchment by day, chalk on slate at night. Both built properly, because most of this reading happens late.</p>
         </div>
         <div class="card">
           <div class="card-icon">🤝</div>
@@ -108,6 +163,123 @@
           <p>Join fellow members on Telegram for encouragement, accountability, and shared wisdom — respectful and judgement-free.</p>
         </div>
       </div>
+    </section>
+
+    <!-- ── The ladder ───────────────────────────────────── -->
+    <section class="section section-alt" id="journey">
+      <p class="eyebrow">Paced for a beginner</p>
+      <h2>The app opens as you do</h2>
+      <p class="section-sub">Handing someone twenty disciplines and a hundred articles on day one is how they fail on day one. So it arrives in order, and what you have earned stays yours even after a slip.</p>
+      <div class="ladder">
+        <div class="rung">
+          <span class="rung-day">Day 0</span>
+          <h3>Start light</h3>
+          <p>Your streak, the daily check-in with the essentials only, the calmest two practices, and a good chunk of the library already open.</p>
+        </div>
+        <div class="rung">
+          <span class="rung-day">Day 3 &middot; 7</span>
+          <h3>The first rungs</h3>
+          <p>More check-in questions as the basics hold, more of the library, and your first two badges — First Light and Steady Flame.</p>
+        </div>
+        <div class="rung">
+          <span class="rung-day">Day 14 &middot; 21</span>
+          <h3>Harder disciplines</h3>
+          <p>The month-three disciplines only show up once there is a base under them. Retention-based breathwork opens here, not before.</p>
+        </div>
+        <div class="rung">
+          <span class="rung-day">Day 30</span>
+          <h3>Everything</h3>
+          <p>The whole library is open, including the few deep pieces that assume you already have a handle on the rest.</p>
+        </div>
+      </div>
+      <p class="note-band">
+        The gate reads your best run, not your current one. Relapse and the streak resets — but nothing re-locks. Losing your reading on the day you need it most would be a punishment, not a practice.
+      </p>
+    </section>
+
+    <!-- ── Milestones ───────────────────────────────────── -->
+    <section class="section" id="milestones">
+      <p class="eyebrow">Something to reach for</p>
+      <h2>Eleven milestones</h2>
+      <p class="section-sub">Each one lands on screen the day you cross it, with what those days do for body, mind, and spirit — written honestly. Mechanisms where there are mechanisms, &ldquo;commonly reported&rdquo; where it is subjective, and tradition named as tradition.</p>
+      <div class="badge-grid">
+        <div class="badge-block"><span class="badge-day">Day 1</span><span class="badge-name">First Light</span><span class="badge-sans">प्रथम प्रकाश &middot; Pratham Prakāsh</span></div>
+        <div class="badge-block"><span class="badge-day">Day 3</span><span class="badge-name">Steady Flame</span><span class="badge-sans">स्थिर ज्योति &middot; Sthir Jyoti</span></div>
+        <div class="badge-block"><span class="badge-day">Day 7</span><span class="badge-name">One Week Vow</span><span class="badge-sans">सप्ताह व्रत &middot; Saptāh Vrat</span></div>
+        <div class="badge-block"><span class="badge-day">Day 14</span><span class="badge-name">Fortnight Fire</span><span class="badge-sans">पक्ष तपस् &middot; Paksha Tapas</span></div>
+        <div class="badge-block"><span class="badge-day">Day 21</span><span class="badge-name">Inner Discipline</span><span class="badge-sans">आत्म संयम &middot; Ātma Sanyam</span></div>
+        <div class="badge-block"><span class="badge-day">Day 30</span><span class="badge-name">One Moon</span><span class="badge-sans">एक मास &middot; Ek Māsa</span></div>
+        <div class="badge-block"><span class="badge-day">Day 45</span><span class="badge-name">Unshaken</span><span class="badge-sans">अचल &middot; Achala</span></div>
+        <div class="badge-block"><span class="badge-day">Day 60</span><span class="badge-name">Twice Moon</span><span class="badge-sans">द्वि मास &middot; Dvi Māsa</span></div>
+        <div class="badge-block"><span class="badge-day">Day 90</span><span class="badge-name">The Reset</span><span class="badge-sans">नव जन्म &middot; Nava Janma</span></div>
+        <div class="badge-block"><span class="badge-day">Day 180</span><span class="badge-name">Half Year Tapas</span><span class="badge-sans">अर्ध वर्ष तपस् &middot; Ardha Varsha Tapas</span></div>
+        <div class="badge-block"><span class="badge-day">Day 365</span><span class="badge-name">One Year Sovereign</span><span class="badge-sans">संवत्सर सिद्धि &middot; Samvatsara Siddhi</span></div>
+      </div>
+    </section>
+
+    <!-- ── Phases ───────────────────────────────────────── -->
+    <section class="section section-alt" id="phases">
+      <p class="eyebrow">The timeline</p>
+      <h2>Five phases, so you know where you are</h2>
+      <p class="section-sub">Most people quit in a week they thought was failure and was actually just the phase. This is the same journey drawn as five arcs, with what usually shows up in each.</p>
+      <ol class="phase-list">
+        <li class="phase">
+          <span class="phase-range">Day 1&ndash;7</span>
+          <div>
+            <h3>The Initial Reset</h3>
+            <p>The loudest week. Everything here is temporary, including the difficulty.</p>
+          </div>
+        </li>
+        <li class="phase">
+          <span class="phase-range">Day 8&ndash;30</span>
+          <div>
+            <h3>Finding Steadiness</h3>
+            <p>The week-to-week phase, where a routine becomes possible.</p>
+          </div>
+        </li>
+        <li class="phase">
+          <span class="phase-range">Day 31&ndash;60</span>
+          <div>
+            <h3>Clarity</h3>
+            <p>Attention comes back, and the streak gets tested rather than just held.</p>
+          </div>
+        </li>
+        <li class="phase">
+          <span class="phase-range">Day 61&ndash;180</span>
+          <div>
+            <h3>It Becomes You</h3>
+            <p>The stretch where it stops being a thing you are doing.</p>
+          </div>
+        </li>
+        <li class="phase">
+          <span class="phase-range">Day 181+</span>
+          <div>
+            <h3>Living It</h3>
+            <p>Past the point where anything you feel can be called a rebound.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── Practices ────────────────────────────────────── -->
+    <section class="section" id="practices">
+      <p class="eyebrow">Do something with it</p>
+      <h2>Nine guided practices</h2>
+      <p class="section-sub">A timer is the result of a practice, not the practice. These give you something specific to do — with the steps on screen before you begin, and the breath paced for you while you go.</p>
+      <ul class="practice-list">
+        <li class="practice"><b>Equal Breath</b><span class="deva">सम वृत्ति &middot; Sama Vritti</span><p>Four in, four out. The plainest breath there is.</p></li>
+        <li class="practice"><b>Alternate Nostril</b><span class="deva">अनुलोम विलोम &middot; Anulom Vilom</span><p>In one nostril, out the other. No retention.</p></li>
+        <li class="practice"><b>Humming Bee Breath</b><span class="deva">भ्रामरी &middot; Bhramari</span><p>A long humming exhale, ears gently closed.</p></li>
+        <li class="practice"><b>Ocean Breath</b><span class="deva">उज्जायी &middot; Ujjayi</span><p>A soft constriction at the throat, audible like a wave.</p></li>
+        <li class="practice"><b>Cooling Breath</b><span class="deva">शीतली &middot; Sheetali</span><p>Inhale through a curled tongue, exhale through the nose.</p></li>
+        <li class="practice"><b>Channel Cleaning</b><span class="deva">नाड़ी शोधन &middot; Nadi Shodhana</span><p>Alternate nostril breathing, with the breath held in.</p></li>
+        <li class="practice"><b>Skull Shining Breath</b><span class="deva">कपालभाति &middot; Kapalabhati</span><p>Short sharp exhales from the belly. Passive inhales.</p></li>
+        <li class="practice"><b>Om Japa</b><span class="deva">ॐ जप &middot; Om Japa</span><p>One mala — 108 repetitions of Om, counted for you.</p></li>
+        <li class="practice"><b>Steady Gazing</b><span class="deva">त्राटक &middot; Trataka</span><p>Hold your gaze on one point without blinking.</p></li>
+      </ul>
+      <p class="note-band">
+        The names, ratios and counts are the traditional ones. Where the classical version is not safe for a beginner, the app teaches the beginner version and says so instead of quietly swapping it. Anything with a real contraindication carries its caution <em>above</em> the start button — never in a footnote.
+      </p>
     </section>
 
     <!-- ── How it works ─────────────────────────────────── -->
@@ -124,7 +296,7 @@
         <li class="step">
           <span class="step-num">2</span>
           <h3>Learn &amp; redirect</h3>
-          <p>Read from the knowledge library and anchor to your goals — turning the energy you&rsquo;ve been leaking into fuel for the life you want.</p>
+          <p>Read from the knowledge library, sit for a practice, and anchor to your goals — turning the energy you&rsquo;ve been leaking into fuel for the life you want.</p>
         </li>
         <li class="step">
           <span class="step-num">3</span>
@@ -148,6 +320,18 @@
           <p>Brahmi gives you a structured daily practice, knowledge, and tracking to support your goal. Results depend on your consistency and circumstances, and experiences vary from person to person. It&rsquo;s a tool to support your effort, not a guaranteed cure.</p>
         </details>
         <details class="faq-item">
+          <summary>Why is some content locked at the start?</summary>
+          <p>Because handing a beginner everything at once is how they fail at once. Articles, check-in questions and practices open as your days add up — a good part of the library is there from day one, most of it by the second week, and all of it by day thirty.</p>
+        </details>
+        <details class="faq-item">
+          <summary>If I relapse, do I lose what I unlocked?</summary>
+          <p>No. Your streak resets, but nothing re-locks. The app remembers your best run, so the reading and the practices you had earned stay open — including on the day you need them most.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are the breathing practices safe?</summary>
+          <p>The gentle ones are open from the start; the forceful and retention-based ones only arrive once you have a base under them. Every practice with a real contraindication shows its caution before you begin, not after. If you have a heart, blood-pressure, eye, or respiratory condition, or you are pregnant, please check with a doctor first.</p>
+        </details>
+        <details class="faq-item">
           <summary>How does the free trial work?</summary>
           <p>You start with a 3-day free trial that unlocks a hand-picked path for beginners. You can explore the experience before deciding to continue. You can cancel during the trial.</p>
         </details>
@@ -157,7 +341,7 @@
         </details>
         <details class="faq-item">
           <summary>Is my data private?</summary>
-          <p>Your answers and progress are personal to you. We don&rsquo;t sell your personal data. See our <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms</a> for the full details.</p>
+          <p>Your answers and progress are personal to you. We don&rsquo;t sell your personal data. We do record the calendar dates on which you open the app — the date only, never the time of day, how long you stayed, which screens you saw, or where you were — and you can see that count yourself on your profile as your active days. See our <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms</a> for the full details.</p>
         </details>
         <details class="faq-item">
           <summary>I relapsed — did I fail?</summary>
@@ -172,10 +356,12 @@
 
     <!-- ── Closing CTA ──────────────────────────────────── -->
     <section class="section cta-band">
-      <img src="assets/logo.png" alt="" class="cta-icon" />
-      <h2>Begin your practice</h2>
-      <p class="section-sub">To help you reclaim the energy and focus that modern life quietly drains — using principles that have guided disciplined lives for millennia.</p>
-      <a href="#get" class="btn btn-primary btn-lg">Get the app</a>
+      <div class="cta-inner">
+        <img src="assets/logo.png" alt="" class="cta-icon" />
+        <h2>Begin your practice</h2>
+        <p class="section-sub">To help you reclaim the energy and focus that modern life quietly drains — using principles that have guided disciplined lives for millennia.</p>
+        <a href="#get" class="btn btn-lg">Get the app</a>
+      </div>
     </section>
 
   </main>
@@ -189,6 +375,8 @@
       </div>
       <nav class="footer-links">
         <a href="#features">Features</a>
+        <a href="#journey">The journey</a>
+        <a href="#practices">Practices</a>
         <a href="#how-it-works">How it works</a>
         <a href="#faq">FAQ</a>
         <a href="./privacy.html">Privacy Policy</a>
