@@ -233,13 +233,14 @@ h3 { font-size: 20px; letter-spacing: -0.015em; line-height: 1.25; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--on-surface); }
 .brand:hover { text-decoration: none; }
 
+/* The logo art already carries its own rounded shape, gradient and
+   transparent corners, so the brand mark is left plain here and in the hero —
+   the border, flat fill and hard shadow only squared off its corners and
+   boxed in the one element that is meant to read as the brand itself. The
+   footer and closing-card marks keep the neo-brutal treatment. */
 .brand-icon {
   width: 34px;
   height: 34px;
-  border: var(--border) solid var(--ink);
-  border-radius: var(--radius-sm);
-  background: var(--brand-skin);
-  box-shadow: var(--shadow-sm);
 }
 
 .brand-name {
@@ -391,10 +392,6 @@ h3 { font-size: 20px; letter-spacing: -0.015em; line-height: 1.25; }
   width: 84px;
   height: 84px;
   margin: 0 auto 24px;
-  background: var(--brand-skin);
-  border: var(--border-thick) solid var(--ink);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
 }
 
 .hero .eyebrow { background: var(--clay); }
