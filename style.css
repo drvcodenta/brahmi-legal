@@ -265,13 +265,16 @@ h3 { font-size: 20px; letter-spacing: -0.015em; line-height: 1.25; }
   color: var(--on-surface);
 }
 
-/* Not the CTA: it is already on --primary, so recolouring its label to
-   --primary erases it. .nav-cta:hover below cannot win on specificity. */
+/* The CTA is a .btn-primary: it brings its own --primary fill, so its label
+   has to be --on-primary in BOTH states. These .nav-menu selectors outrank
+   .btn-primary (0,2,0 over 0,1,0), so each one has to say so explicitly —
+   at rest --on-surface is near-black on dark maroon, and on hover --primary
+   is the fill colour itself. Either way the label disappears. */
+.nav-menu a.nav-cta { color: var(--on-primary); }
 .nav-menu a:not(.nav-cta):hover { color: var(--primary); text-decoration: none; }
 .nav-menu a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; }
 
 .nav-cta { padding: 9px 16px; font-size: 13px; box-shadow: var(--shadow-sm); }
-.nav-cta:hover { color: var(--on-primary); }
 
 /* Theme toggle — injected by script.js, mirrors the app's light/dark switch */
 .theme-toggle {
