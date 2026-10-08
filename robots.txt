@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Do not index the duplicate of the homepage.
+# GitHub Pages serves both / and /index.html as the same file.
+Disallow: /index.html
+
+Sitemap: https://brahmi.site/sitemap.xml
