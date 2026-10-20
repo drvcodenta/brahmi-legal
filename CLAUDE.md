@@ -78,3 +78,22 @@ The app repo has `LEGAL_AND_WEBSITE.md` at its root, which maps the same
 pipeline from the other side and lists two dead copies of these pages that
 still sit in it (`docs/`, `scripts/generate-legal.ts`) — both stale leftovers
 of a retired GitHub Action, and both easy to mistake for the real thing.
+
+## Blog
+
+Step-by-step for writers: `BLOG.md`. `blog/index.html` lists posts; each post is `blog/<slug>/index.html`, served
+at `/blog/<slug>/`. `blog.py` (stdlib, like `bake.py`) owns the generated
+parts:
+
+```bash
+python3 blog.py new "Post title"      # draft: noindex, unlisted, not in sitemap
+# write the body between <!-- blog:body --> markers, fill post-meta JSON
+python3 blog.py publish <slug>        # un-draft, date it, build
+python3 blog.py build                 # after any post-meta edit
+```
+
+The `post-meta` JSON at the top of each post is the source of truth for its
+title, description, dates and author. `build` rewrites the `blog:head`,
+`blog:header`, `blog:list`, `blog:schema` and `blog:urls` (sitemap.xml)
+blocks from it. Edit the JSON, not those blocks. Posts use root-relative
+paths (`/style.css`) because they sit two directories deep.
