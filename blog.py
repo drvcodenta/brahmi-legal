@@ -381,7 +381,7 @@ POST_SKELETON = """<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Space+Grotesk:wght@700&display=swap"
     rel="stylesheet" />
   <meta name="theme-color" content="#FFF8F7" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#141010" media="(prefers-color-scheme: dark)" />
@@ -404,9 +404,12 @@ POST_SKELETON = """<!DOCTYPE html>
       </button>
       <div class="nav-menu" id="nav-menu">
         <a href="/#features">Features</a>
+        <a href="/#journey">The journey</a>
         <a href="/#practices">Practices</a>
+        <a href="/#how-it-works">How it works</a>
         <a href="/#faq">FAQ</a>
         <a href="/blog/">Blog</a>
+        <a href="/privacy.html">Privacy</a>
         <a href="mailto:codentas@gmail.com">Contact</a>
         <a href="/#get" class="btn btn-primary nav-cta">Get the app</a>
       </div>
